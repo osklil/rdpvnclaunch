@@ -21,8 +21,8 @@ This software is a work in progress and there are probably many ways it can
 still be improved. If you'd like to contribute patches, ideas, or bug
 reports, please send me an email!
 
-License
--------
+Copyright and License
+---------------------
 
 rdpvnclaunch is copyright (C) 2012 Oskar Liljeblad.
 
@@ -40,8 +40,10 @@ rdpvnclaunch is copyright (C) 2012 Oskar Liljeblad.
   along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 rdpvnclaunch may contain code from Gnulib
-<http://www.gnu.org/software/gnulib/>. Such code is licensed under
-the terms of the GNU Lesser General Public License:
+<http://www.gnu.org/software/gnulib/>. Such code is licensed under the
+terms of the GNU Lesser General Public License.
+
+Gnulib is opyright (C) Free Software Foundation, Inc.
 
   This program is free software: you can redistribute it and/or modify it
   under the terms of the GNU Lesser General Public License as published
@@ -54,7 +56,7 @@ the terms of the GNU Lesser General Public License:
   Lesser General Public License for more details.
 
   You should have received a copy of the GNU Lesser General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 rdpvnclaunch contains a 3DES implementation by Richard
 Outerbridge. This code is in the public domain:
