@@ -1,4 +1,4 @@
-/* proxy.c - Basic SOCKS implementation
+/* proxy.c - Basic SOCKS client implementation
  *
  * Copyright (C) 2012 Oskar Liljeblad
  *
