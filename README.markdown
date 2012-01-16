@@ -123,3 +123,6 @@ References
 
   * RDP Settings for Remote Desktop Services in Windows Server 2008 R2.
     <http://technet.microsoft.com/en-us/library/ff393699(WS.10).aspx>
+
+  * GNU portability library (Gnulib).
+    <http://www.gnu.org/software/gnulib/>
