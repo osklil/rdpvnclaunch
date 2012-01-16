@@ -26,35 +26,51 @@ License
 
 rdpvnclaunch is copyright (C) 2012 Oskar Liljeblad.
 
-This program is free software: you can redistribute it and/or modify it
-under the terms of the GNU General Public License as published by the Free
-Software Foundation, either version 3 of the License, or (at your option)
-any later version.
+  This program is free software: you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the Free
+  Software Foundation, either version 3 of the License, or (at your option)
+  any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  You should have received a copy of the GNU General Public License
+  along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-rdpvnclaunch's source code contains a 3DES implementation by Richard
-Outerbridge which is in the public domain:
+rdpvnclaunch may contain code from Gnulib
+<http://www.gnu.org/software/gnulib/>. Such code is licensed under
+the terms of the GNU Lesser General Public License:
 
-  /* D3DES (V5.09) -
-   *
-   * A portable, public domain, version of the Data Encryption Standard.
-   *
-   * Written with Symantec's THINK (Lightspeed) C by Richard Outerbridge.
-   * Thanks to: Dan Hoey for his excellent Initial and Inverse permutation
-   * code;  Jim Gillogly & Phil Karn for the DES key schedule code; Dennis
-   * Ferguson, Eric Young and Dana How for comparing notes; and Ray Lau,
-   * for humouring me on.
-   *
-   * Copyright (c) 1988,1989,1990,1991,1992 by Richard Outerbridge.
-   * (GEnie : OUTER; CIS : [71755,204]) Graven Imagery, 1992.
-   */
+  This program is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as published
+  by the Free Software Foundation; either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
+
+rdpvnclaunch contains a 3DES implementation by Richard
+Outerbridge. This code is in the public domain:
+
+  D3DES (V5.09)
+
+  A portable, public domain, version of the Data Encryption Standard.
+
+  Written with Symantec's THINK (Lightspeed) C by Richard Outerbridge.
+  Thanks to: Dan Hoey for his excellent Initial and Inverse permutation
+  code;  Jim Gillogly & Phil Karn for the DES key schedule code; Dennis
+  Ferguson, Eric Young and Dana How for comparing notes; and Ray Lau,
+  for humouring me on.
+  
+  Copyright (c) 1988,1989,1990,1991,1992 by Richard Outerbridge.
+  (GEnie : OUTER; CIS : [71755,204]) Graven Imagery, 1992.
 
 Download
 --------
