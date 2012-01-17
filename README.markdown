@@ -110,6 +110,10 @@ Run 'mingw32-make' from the source code directory.
 Usage
 -----
 
+rdplaunch -h HOSTADDRESS -u USERNAME -p PASSWORD
+
+vnclaunch -h HOSTADDRESS -p PASSWORD
+
 FIXME
 
 Future
