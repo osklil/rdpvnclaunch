@@ -200,8 +200,7 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
                             "\n"
                             "Report bugs to <%ls>.\n",
                             program_name, DEFAULT_PORT_STR, DEFAULT_RDP_TEMPLATE_FILE, DEFAULT_PROXY_PORT, PACKAGE_BUGREPORT);
-                    exit(1);
-                    break;
+                    exit(0);
 				default:
 					die("Invalid options -%c", argv[c][1]);
 				}

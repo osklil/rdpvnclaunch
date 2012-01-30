@@ -151,6 +151,28 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
                     free(proxy_port);
                     proxy_port = xwcsdup(argv[++c]);
                     break;
+                case 'H':
+                    inform(
+                            "Usage: %s [OPTION]...\n"
+                            "Start VNC sessions using vncviewer with password specified on command line.\n"
+                            "\n"
+                            "Options:\n"
+                            "  -h HOST\n"
+                            "    Name or address of host to connect to. Required.\n"
+                            "  -p PASSWORD\n"
+                            "    Password to log in automatically with.\n"
+                            "  -P PORT\n"
+                            "    Port number to connect to. Default is %ls.\n"
+                            "  -T FILE\n"
+                            "    Path of an alternate template file. Default is %ls.\n"
+                            "  -s HOST\n"
+                            "    Name or address of a SOCKS4 proxy to connect through.\n"
+                            "  -S PORT\n"
+                            "    Port number of SOCKS4 proxy. Default is %ls.\n"
+                            "\n"
+                            "Report bugs to <%ls>.\n",
+                            program_name, DEFAULT_PORT_STR, DEFAULT_VNC_TEMPLATE_FILE, DEFAULT_PROXY_PORT, PACKAGE_BUGREPORT);
+                    exit(0);
 				default:
 					die("Invalid options -%c", argv[c][1]);
 				}
