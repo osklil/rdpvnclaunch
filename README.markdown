@@ -110,11 +110,17 @@ Run 'mingw32-make' from the source code directory.
 Usage
 -----
 
+Basic usage for rdplaunch and vnclaunch is:
+
 rdplaunch -h HOSTADDRESS -u USERNAME -p PASSWORD
 
 vnclaunch -h HOSTADDRESS -p PASSWORD
 
-FIXME
+Run each program with -H for extended usage and list of options:
+
+rdplaunch -H
+
+vnclaunch -H
 
 Future
 ------

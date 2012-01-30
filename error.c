@@ -24,6 +24,21 @@
 #include <stdarg.h>
 #include "rdpvnclaunch.h"
 
+void inform (char *fmt, ...)
+{
+    va_list argv;
+    char *msg;
+
+    va_start(argv, fmt);
+    if (vasprintf(&msg, fmt, argv) < 0) {
+        MessageBox(NULL, "Cannot allocate memory during error message generation.", program_name, MB_OK|MB_ICONSTOP);
+		return;
+    }
+	MessageBox(NULL, msg, program_name, MB_OK);
+	free(msg);
+    va_end(argv);
+}
+
 void vwarn (char *fmt, va_list argv)
 {
 	char *msg;

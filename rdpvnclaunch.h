@@ -29,6 +29,8 @@
 
 #define DEFAULT_PROXY_PORT L"1080"
 
+#define PACKAGE_BUGREPORT L"oskar@osk.mine.nu"
+
 typedef struct {
     wchar_t *data;
     size_t size;
@@ -77,6 +79,7 @@ extern void xalloc_die (void);
 extern char *errno_errstr (void);
 extern char *system_errstr_error(DWORD error);
 extern char *system_errstr (void);
+extern void inform (char *fmt, ...);
 
 /* werror.c */
 extern void vwwarn (wchar_t *fmt, va_list argv);
