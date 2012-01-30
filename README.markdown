@@ -5,10 +5,11 @@ Introduction
 ------------
 
 rdpvnclaunch consists of two separate programs - rdplaunch and vnclaunch -
-that make it possible to start RDP and VNC sessions without having to type
-the password. They also provide transparent SOCKS4 proxying support for
-these applications by implementing a proxy client. Connection details are
-specified using template files as well as command line options.
+that make it possible to start RDP and VNC sessions with credentials
+(username and password) specified on the command line. They also provide
+transparent SOCKS4 proxying support for these applications by implementing a
+proxy client. Connection details are specified using template files as well
+as command line options.
 
 rdpvnclaunch is written in C and compiles with MinGW.
 
