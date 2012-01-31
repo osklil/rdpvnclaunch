@@ -11,6 +11,14 @@ transparent SOCKS4 proxying support for these applications by implementing a
 proxy client. Connection details are specified using template files as well
 as command line options.
 
+rdplaunch uses Remote Desktop Connection (mstsc.exe) to connect to remote
+hosts. Before starting mstsc, changes are made in the registry to enable
+automatic sign on. A temporary connection file (.rdp) is then generated
+from the template, and finally mstsc is launched to open the connection.
+
+vnclaunch works in a similar fashion, except that the registry is not
+modified.
+
 rdpvnclaunch is written in C and compiles with MinGW.
 
 Author and Feedback
