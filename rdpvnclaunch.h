@@ -29,6 +29,8 @@
 
 #define DEFAULT_PROXY_PORT L"1080"
 
+#define PACKAGE_NAME L"rdpvnclaunch"
+#define PACKAGE_VERSION L"0.1.0"
 #define PACKAGE_BUGREPORT L"oskar@osk.mine.nu"
 
 typedef struct {

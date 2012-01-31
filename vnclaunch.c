@@ -34,6 +34,7 @@
 
 const char *program_name = "vnclaunch";
 const wchar_t *program_name_w = L"vnclaunch";
+const char version_etc_copyright[] = "Copyright (C) 2012 Oskar Liljeblad";
 
 #define XDIGIT_LCHAR(x) ((x) <= 9 ? '0'+(x) : 'a'+(x)-10)
 
@@ -169,9 +170,23 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
                             "    Name or address of a SOCKS4 proxy to connect through.\n"
                             "  -S PORT\n"
                             "    Port number of SOCKS4 proxy. Default is %ls.\n"
+                            "  -H\n"
+                            "    Display this help and exit.\n"
+                            "  -V\n"
+                            "    Display version information and exit.\n"
                             "\n"
                             "Report bugs to <%ls>.\n",
                             program_name, DEFAULT_PORT_STR, DEFAULT_VNC_TEMPLATE_FILE, DEFAULT_PROXY_PORT, PACKAGE_BUGREPORT);
+                    exit(0);
+                case 'V':
+                    inform(
+                        "%s (%ls) %ls\n"
+                        "%s\n"
+                        "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+                        "This is free software: you are free to change and redistribute it.\n"
+                        "There is NO WARRANTY, to the extent permitted by law.\n\n"
+                        "Written by Oskar Liljeblad.",
+                            program_name, PACKAGE_NAME, PACKAGE_VERSION, version_etc_copyright);
                     exit(0);
 				default:
 					die("Invalid options -%c", argv[c][1]);
