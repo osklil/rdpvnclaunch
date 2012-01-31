@@ -116,6 +116,14 @@ Build Instructions
 
 Run 'mingw32-make' from the source code directory.
 
+Installation
+------------
+
+rdplaunch and vnclaunch do not need to be installed. They do however need
+template files to run. By default the template files are expected to be
+located in the same directory as the executable. You can use the -T option
+to override the path.
+
 Usage
 -----
 
