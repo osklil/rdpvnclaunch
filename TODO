@@ -1,5 +1,3 @@
-some computers require enablecredsspsupport:i:1, some computers require 0! try with different Windows 2008 R2 RDP settings (i.e. Network Level Authentication)
-
 implement long options, maybe with gnulib getopt_long
 
 support socks5, socks auth, etc
