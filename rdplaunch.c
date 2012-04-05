@@ -98,6 +98,7 @@ static void prepare_registry_for_rdp_connection (const wchar_t *hostname)
 int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, int cmdShow)
 {
 	BOOL admin_mode = FALSE;
+	BOOL credssp_support = FALSE;
 	wchar_t *template_file;
     wchar_t *proxy_host = NULL;
     wchar_t *proxy_port;
@@ -111,8 +112,9 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
 		L"CLIENTHEIGHT", NULL,		/* Height of screen excluding task bar */
 		L"INNERHEIGHT", NULL,		/* Height of screen excluding task bar and top and bottom window frames */
 		L"TMPFILE", NULL,
-		L"ADMINMODE", NULL,		/* "1" if admin_mode, otherwise "0" */
+		L"ADMINMODE", NULL,			/* "1" if admin_mode, otherwise "0" */
 		L"TITLE", NULL,
+		L"CREDSSP", NULL,			/* "1" if credssp_support, otherwise "0" */
 		NULL
 	};
 
@@ -130,6 +132,9 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
 				switch (argv[c][1]) {
 				case 'a':
 					admin_mode = TRUE;
+					break;
+				case 'c':
+					credssp_support = TRUE;
 					break;
 				case 'h':
 					if (c+1 >= argc)
@@ -198,6 +203,8 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
                             "    Port number of SOCKS4 proxy. Default is %ls.\n"
                             "  -a\n"
                             "    Connect to administrative (console) session.\n"
+							"  -c\n"
+							"    Enable CredSSP support.\n"
                             "  -H\n"
                             "    Display this help and exit.\n"
                             "  -V\n"
@@ -261,6 +268,7 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
 	set_replacement(search_replace, L"INNERHEIGHT", xaswprintf(L"%lu", height - frameheight - captionheight));
 
 	set_replacement(search_replace, L"ADMINMODE", xwcsdup(admin_mode ? L"1" : L"0"));
+	set_replacement(search_replace, L"CREDSSP", xwcsdup(credssp_support ? L"1" : L"0"));
 
 	if (get_replacement(search_replace, L"TITLE") == NULL)
 		set_replacement(search_replace, L"TITLE", xwcsdup(hostname));
