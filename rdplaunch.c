@@ -204,7 +204,7 @@ int WINAPI WinMain (HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, i
                             "  -a\n"
                             "    Connect to administrative (console) session.\n"
 							"  -c\n"
-							"    Enable CredSSP support.\n"
+							"    Enable CredSSP support (disabled by default).\n"
                             "  -H\n"
                             "    Display this help and exit.\n"
                             "  -V\n"

@@ -1,0 +1,5 @@
+201x-xx-xx: Version 0.2.0 released.
+Add -c option to enable CredSSP. CredSSP is disabled by default in the template.
+
+2012-01-31: Version 0.1.0 released.
+First public release.
